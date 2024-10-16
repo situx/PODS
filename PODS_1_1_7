@@ -424,6 +424,15 @@
         <Class IRI="https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/189#F103:_Calibration_(Camera_Calibration)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/190#F104:_Registration_(Fusion_of_Multiple_Point_Clouds_or_3D_Models)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/191#F105:_Interrogation_Tools"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="https://photogrammetry.altervista.org/items/show/89#F3_Processing"/>
     </Declaration>
     <Declaration>
@@ -541,9 +550,6 @@
         <ObjectProperty IRI="#Y49_has_created_Digital_Twin"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#Y4_has_dominant_geometry_type"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#Y50_happened_on_modelling_device"/>
     </Declaration>
     <Declaration>
@@ -568,9 +574,6 @@
         <ObjectProperty IRI="#Y59__is_texture_set_of"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#Y5_has_scale_type"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#Y61_used_modelling_software"/>
     </Declaration>
     <Declaration>
@@ -593,9 +596,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#Y69_has_Digital_Twin_as_output"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Y6_used_trajectory"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#Y70_Final_Use_of_3D_Model_consist_of"/>
@@ -730,9 +730,6 @@
         <ObjectProperty IRI="#Y14:_stores_acquisition_Picture"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#Y15:_is_composed_of_picture"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#Y17:_has_acquisition_operator"/>
     </Declaration>
     <Declaration>
@@ -746,12 +743,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#Y21:_has_coordinates_of_acquisition"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Y2:__had_pictures_input"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Y3:_has_Type_Of_Acquisition"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#Y40:_has_processing_operator"/>
@@ -824,6 +815,24 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#Y95:_was_measured_in_number_of_points"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/192#Y15:_is_composed_of_picture"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/193#Y2:__had_pictures_input"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/194#Y3:_has_Type_Of_Acquisition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/195#Y4_has_dominant_geometry_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/196#Y5_has_scale_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/197#Y6_used_trajectory"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#P3_has_note"/>
@@ -1749,6 +1758,18 @@
         <Class IRI="http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D9_Data_Object#D9_Data_Object"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/189#F103:_Calibration_(Camera_Calibration)"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/132#F46:_Matching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/190#F104:_Registration_(Fusion_of_Multiple_Point_Clouds_or_3D_Models)"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/113#F27_Densified_Point_Cloud"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/191#F105:_Interrogation_Tools"/>
+        <Class IRI="http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="https://photogrammetry.altervista.org/items/show/89#F3_Processing"/>
         <Class IRI="http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event"/>
     </SubClassOf>
@@ -2329,10 +2350,6 @@
         <ObjectProperty IRI="#L11_had_output_(was_output_of)"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Y4_has_dominant_geometry_type"/>
-        <ObjectProperty IRI="#P2__has_type_(is_type_of)"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#Y50_happened_on_modelling_device"/>
         <ObjectProperty IRI="#L12_happened_on_device_(was_device_for)"/>
     </SubObjectPropertyOf>
@@ -2363,10 +2380,6 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#Y59__is_texture_set_of"/>
         <ObjectProperty IRI="#P106_is_composed_of_(forms_part_of)"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Y5_has_scale_type"/>
-        <ObjectProperty IRI="#P2__has_type_(is_type_of)"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#Y61_used_modelling_software"/>
@@ -2403,10 +2416,6 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#Y69_has_Digital_Twin_as_output"/>
         <ObjectProperty IRI="#L11_had_output_(was_output_of)"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Y6_used_trajectory"/>
-        <ObjectProperty IRI="#P33_used_specific_technique_(was_used_by)"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#Y70_Final_Use_of_3D_Model_consist_of"/>
@@ -2537,10 +2546,6 @@
         <ObjectProperty IRI="#L19_stores_(is_stored_on)"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Y15:_is_composed_of_picture"/>
-        <ObjectProperty IRI="#P106_is_composed_of_(forms_part_of)"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#Y17:_has_acquisition_operator"/>
         <ObjectProperty IRI="#P14_carried_out_by_(performed)"/>
     </SubObjectPropertyOf>
@@ -2559,14 +2564,6 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#Y21:_has_coordinates_of_acquisition"/>
         <ObjectProperty IRI="#P169_defines_spacetime_volume_(spacetime_volume_is_defined_by)"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Y2:__had_pictures_input"/>
-        <ObjectProperty IRI="#L10_had_input_(was_input_of)"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Y3:_has_Type_Of_Acquisition"/>
-        <ObjectProperty IRI="#P2__has_type_(is_type_of)"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#Y40:_has_processing_operator"/>
@@ -2663,6 +2660,30 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#Y95:_was_measured_in_number_of_points"/>
         <ObjectProperty IRI="#O24_measured_(was_measured_by)"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/192#Y15:_is_composed_of_picture"/>
+        <ObjectProperty IRI="#P106_is_composed_of_(forms_part_of)"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/193#Y2:__had_pictures_input"/>
+        <ObjectProperty IRI="#L10_had_input_(was_input_of)"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/194#Y3:_has_Type_Of_Acquisition"/>
+        <ObjectProperty IRI="#P2__has_type_(is_type_of)"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/195#Y4_has_dominant_geometry_type"/>
+        <ObjectProperty IRI="#P2__has_type_(is_type_of)"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/196#Y5_has_scale_type"/>
+        <ObjectProperty IRI="#P2__has_type_(is_type_of)"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/197#Y6_used_trajectory"/>
+        <ObjectProperty IRI="#P33_used_specific_technique_(was_used_by)"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#Y10_has_created_raw_data"/>
@@ -2785,10 +2806,6 @@
         <Class IRI="https://photogrammetry.altervista.org/items/show/144#F58_Modifying_Mesh"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Y4_has_dominant_geometry_type"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#Y50_happened_on_modelling_device"/>
         <Class IRI="https://photogrammetry.altervista.org/items/show/144#F58_Modifying_Mesh"/>
     </ObjectPropertyDomain>
@@ -2821,10 +2838,6 @@
         <Class IRI="https://photogrammetry.altervista.org/items/show/149#F62_Texture_Set_of_3D_Mesh"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Y5_has_scale_type"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#Y61_used_modelling_software"/>
         <Class IRI="https://photogrammetry.altervista.org/items/show/144#F58_Modifying_Mesh"/>
     </ObjectPropertyDomain>
@@ -2855,10 +2868,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#Y69_has_Digital_Twin_as_output"/>
         <Class IRI="https://photogrammetry.altervista.org/items/show/91#F5_Exporting"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Y6_used_trajectory"/>
-        <Class IRI="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#Y70_Final_Use_of_3D_Model_consist_of"/>
@@ -2969,10 +2978,6 @@
         <Class IRI="https://photogrammetry.altervista.org/items/show/121#F35_Raw_Data_Carrier"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Y15:_is_composed_of_picture"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#Y17:_has_acquisition_operator"/>
         <Class IRI="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
     </ObjectPropertyDomain>
@@ -2991,14 +2996,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#Y21:_has_coordinates_of_acquisition"/>
         <Class IRI="https://photogrammetry.altervista.org/items/show/131#F45__Acquisition_Coordinates"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Y2:__had_pictures_input"/>
-        <Class IRI="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Y3:_has_Type_Of_Acquisition"/>
-        <Class IRI="Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#Y40:_has_processing_operator"/>
@@ -3099,6 +3096,30 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#Y95:_was_measured_in_number_of_points"/>
         <Class IRI="https://photogrammetry.altervista.org/items/show/113#F27_Densified_Point_Cloud"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/192#Y15:_is_composed_of_picture"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/193#Y2:__had_pictures_input"/>
+        <Class IRI="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/194#Y3:_has_Type_Of_Acquisition"/>
+        <Class IRI="Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/195#Y4_has_dominant_geometry_type"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/196#Y5_has_scale_type"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/197#Y6_used_trajectory"/>
+        <Class IRI="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Y10_has_created_raw_data"/>
@@ -3213,10 +3234,6 @@
         <Class IRI="https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#Y4_has_dominant_geometry_type"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/104#F18_Dominant_Geometry_Type"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#Y50_happened_on_modelling_device"/>
         <Class IRI="https://photogrammetry.altervista.org/items/show/97#F11_Modelling_Device"/>
     </ObjectPropertyRange>
@@ -3257,10 +3274,6 @@
         <Class IRI="https://photogrammetry.altervista.org/items/show/115#F29_Textured_3D_Mesh"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#Y5_has_scale_type"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/105#F19_Scale_Type"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#Y61_used_modelling_software"/>
         <Class IRI="https://photogrammetry.altervista.org/items/show/118#F32_Modelling_Software"/>
     </ObjectPropertyRange>
@@ -3295,10 +3308,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Y69_has_Digital_Twin_as_output"/>
         <Class IRI="https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Y6_used_trajectory"/>
-        <Class IRI="Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Y70_Final_Use_of_3D_Model_consist_of"/>
@@ -3441,10 +3450,6 @@
         <Class IRI="https://photogrammetry.altervista.org/items/show/94#F8_Picture"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#Y15:_is_composed_of_picture"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/94#F8_Picture"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#Y17:_has_acquisition_operator"/>
         <Class IRI="https://photogrammetry.altervista.org/items/show/123#F37_Survey_Operator"/>
     </ObjectPropertyRange>
@@ -3463,14 +3468,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Y21:_has_coordinates_of_acquisition"/>
         <Class IRI="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Y2:__had_pictures_input"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Y3:_has_Type_Of_Acquisition"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/103#F17_Acquisition_Trajectory_Type"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Y40:_has_processing_operator"/>
@@ -3571,6 +3568,30 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Y95:_was_measured_in_number_of_points"/>
         <Class IRI="https://photogrammetry.altervista.org/items/show/138#F52_Dense_Point_Cloud_Measurement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/192#Y15:_is_composed_of_picture"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/94#F8_Picture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/193#Y2:__had_pictures_input"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/194#Y3:_has_Type_Of_Acquisition"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/103#F17_Acquisition_Trajectory_Type"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/195#Y4_has_dominant_geometry_type"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/104#F18_Dominant_Geometry_Type"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/196#Y5_has_scale_type"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/105#F19_Scale_Type"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/197#Y6_used_trajectory"/>
+        <Class IRI="Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#Y20:_has_acquisition_description"/>
@@ -5718,21 +5739,6 @@ A F58 Modifying Mesh process has created a F100 Digital Twin, accurately represe
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Y4_has_dominant_geometry_type</IRI>
-        <Literal>Y4: has dominant geometry type
-
-SubClass of: P2 has type
-
-Domain: F13 Acquisition Method
-Range: F18 Geometry Type
-
-Scope Note:
-This property describes the dominant geometry type (F18) captured during an acquisition method (F13). It indicates whether the acquisition primarily involved points, lines, surfaces, or volumes.
-
-Examples:</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Y50_happened_on_modelling_device</IRI>
         <Literal>Y50: happened on modelling device
 Subproperty of: L12 happened on device
@@ -5845,21 +5851,6 @@ A F62 Texture Set of 3D Mesh is part of a F29 Textured Mesh, providing the textu
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Y5_has_scale_type</IRI>
-        <Literal>Y5: has scale type
-
-SubClass of: P2 has type
-
-Domain: F13 Acquisition Method
-Range: F19 Scale Type
-
-Scope Note:
-This property refers to the scale type (F19) associated with the acquisition method (F13). It defines whether the acquisition was performed on a small, medium, or large scale, according to the object and purpose of the survey.
-
-Examples:</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Y61_used_modelling_software</IRI>
         <Literal>Y61: used modelling software
 Subproperty of: L23 used software or firmware
@@ -5969,21 +5960,6 @@ This property indicates that the result of the exporting phase (F5) is a digital
 
 Example:
 A F5 Exporting phase has produced a F100 Digital Twin, representing the final exported digital copy of the model.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Y6_used_trajectory</IRI>
-        <Literal>Y6: used trajectory
-
-SubProperties of: P33 used specific technique
-
-Domain: F2 Acquisition
-Range: F12 Acquisition Trajectory
-
-Scope Note:
-This property describes the specific trajectory (F12) used during the acquisition event (F2). It denotes the path or movement employed to capture data.
-
-Examples:</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7155,21 +7131,6 @@ This property connects a raw data carrier (F35) to the pictures (F8) it stores. 
 Examples:</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Y15:_is_composed_of_picture</IRI>
-        <Literal>Y15: is composed of picture
-
-Subproperty of: P106 is composed of
-
-Domain: F7 Picture Set
-Range: F8 Picture
-
-Scope Note:
-This property indicates that a picture set (F7) is composed of individual pictures (F8). It defines the relationship between the collection of images used for acquisition and the individual pictures that constitute the set.
-
-Examples:</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>#Y16:_has_number_of_picture</IRI>
         <Literal xml:lang="en">Y16: has number of picture
@@ -7275,21 +7236,6 @@ This property specifies the geographic coordinates (F45) at which the acquisitio
 Examples:</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Y2:__had_pictures_input</IRI>
-        <Literal>Y2: had pictures input
-
-SubClass of: L10 had input
-
-Domain: F2 Acquisition
-Range: F7 Picture Set
-
-Scope Note:
-This property refers to the set of pictures (F7) that were used as input during an acquisition event (F2). It connects the acquisition process to the photographic data that was collected or processed.
-
-Examples:</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>#Y33:_has_observed_number_of_points</IRI>
         <Literal xml:lang="en">Y33: has observed number of points
@@ -7316,21 +7262,6 @@ This property specifically refers to the number of points observed in a dense po
 
 Example:
 A F52 Dense Point Cloud Measurement records an observed number of F53 Dense Point Cloud Number of Points, such as 10,000,000 points in a densified scan.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Y3:_has_Type_Of_Acquisition</IRI>
-        <Literal>Y3: has Type Of Acquisition
-
-SubClass of: P2 has type
-
-Domain: F12 Acquisition Trajectory
-Range: F17 Acquisition Trajectory Type
-
-Scope Note:
-This property identifies the type of trajectory used during an acquisition event (F12). It specifies the method or approach taken to move through space and acquire data, such as linear, circular, or other types of trajectories.
-
-Examples:</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -10346,6 +10277,267 @@ en</Literal>
         <Literal xml:lang="en">The 3D Digital Asset class refers to a broad category of digital objects that represent three-dimensional entities. This class includes various specific types of 3D models, such as F100 3D Digital Twin, F28 3D Mesh, F29 Textured 3D Mesh, F76 3D Model for 3D Print, F81 3D Model for GIS, F84 3D Model for Prospectuses, F88 Archaeometric 3D Model, F91 3D Model for Interactive, F94 3D Model for Database, and F97 AR 3D Model.
 A 3D Digital Asset is defined by its ability to represent surfaces, volumes, and textures of objects in a coherent and structured manner, typically through vertices, edges, faces, or other geometric components (such as meshes) that form the basis of digital three-dimensional models. These assets are often the result of post-processing stages that follow raw data collection, such as point clouds, and include enhanced visual and structural information like textures, color mapping, or other metadata related to the object&apos;s properties or context.
 It is important to note that Point Clouds (as represented by F26 Point Cloud and F27 Dense Point Cloud) are excluded from this class. Point clouds are raw collections of data points in a three-dimensional space that define the surface of an object or scene without structured geometric relationships (e.g., faces, volumes). While point clouds represent a step in the acquisition process, they lack the interconnected geometry and texturing that are characteristic of 3D Digital Assets. A 3D Digital Asset, on the other hand, contains processed, refined, and sometimes enriched information, making it suitable for various applications, including simulations, renderings, interactive platforms, and analysis tools.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/189#F103:_Calibration_(Camera_Calibration)</IRI>
+        <Literal xml:lang="en">Processing_Matching_Calibration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/189#F103:_Calibration_(Camera_Calibration)</IRI>
+        <Literal xml:lang="en">F103: Calibration (Camera Calibration)
+
+Subclass of:
+F46 Matching</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/189#F103:_Calibration_(Camera_Calibration)</IRI>
+        <Literal xml:lang="en">A camera calibration (F103) was performed prior to a photogrammetric survey to correct for optical lens distortion and improve the accuracy of the generated 3D model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/189#F103:_Calibration_(Camera_Calibration)</IRI>
+        <Literal xml:lang="en">During image acquisition for an archaeological project, camera calibration (F103) enabled the collection of optimized data for subsequent 3D model creation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/189#F103:_Calibration_(Camera_Calibration)</IRI>
+        <Literal xml:lang="en">The calibration (F103) was applied to correctly align multiple images in photogrammetry software, ensuring an accurate reconstruction of the 3D scene.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/189#F103:_Calibration_(Camera_Calibration)</IRI>
+        <Literal xml:lang="en">The F103 Calibration class represents the camera calibration process used during photogrammetric data acquisition. Camera calibration is a crucial step in the photogrammetric workflow to ensure that the captured images are accurately mapped to a three-dimensional coordinate system and to correct any intrinsic and extrinsic optical distortions in the camera. The class describes the calibration parameters related to the camera, including focal length, principal point, radial and tangential distortion coefficients, and other optical properties.
+Calibration aims to enhance the quality and accuracy of the 3D models generated through photogrammetry by minimizing systematic errors that may affect the final result. This process can be carried out before or during the image acquisition phase and typically involves a known set of reference points or calibration grids to determine the camera’s geometric properties.
+F103 is part of the broader process of matching and optimizing data in the context of digital surveying, represented by F46 Matching, of which F103 is a subclass. Calibration ensures accurate correspondence between image data and the physical world, facilitating the subsequent processing and 3D modeling phases.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/190#F104:_Registration_(Fusion_of_Multiple_Point_Clouds_or_3D_Models)</IRI>
+        <Literal xml:lang="en">ProcessedDensifiedPointCloudRegistration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/190#F104:_Registration_(Fusion_of_Multiple_Point_Clouds_or_3D_Models)</IRI>
+        <Literal xml:lang="en">F104: Registration (Fusion of Multiple Point Clouds or 3D Models)
+
+Subclass of:
+
+F27 Densified Cloud Point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/190#F104:_Registration_(Fusion_of_Multiple_Point_Clouds_or_3D_Models)</IRI>
+        <Literal xml:lang="en">Automated registration (F104) was applied to fuse point clouds captured from aerial and ground-based photogrammetry, creating a comprehensive 3D model for analysis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/190#F104:_Registration_(Fusion_of_Multiple_Point_Clouds_or_3D_Models)</IRI>
+        <Literal xml:lang="en">During the photogrammetric survey of a large site, registration (F104) was used to merge multiple 3D models captured from different sections, resulting in a unified representation of the site.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/190#F104:_Registration_(Fusion_of_Multiple_Point_Clouds_or_3D_Models)</IRI>
+        <Literal xml:lang="en">The registration (F104) of two overlapping point clouds from different vantage points was performed to generate a complete 3D model of an ancient temple.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/190#F104:_Registration_(Fusion_of_Multiple_Point_Clouds_or_3D_Models)</IRI>
+        <Literal xml:lang="en">The F104 Registration class refers to the process of aligning and merging multiple point clouds or 3D models into a single, coherent model. This class captures the concept of registration, a key step in photogrammetry and 3D reconstruction workflows where data collected from different viewpoints or sources is combined to create a comprehensive representation of an object or scene.
+In this process, registration involves the precise alignment of overlapping regions of point clouds or 3D models, ensuring that they share a common coordinate system and that the surfaces match accurately. This can be done manually or, more commonly, through automated algorithms that minimize alignment errors by detecting corresponding points or features across the datasets.
+Registration is an essential step, especially when working with large datasets or complex scenes that require the integration of multiple scans. This class describes the methodology and actions taken to perform the registration, including the matching of common features, alignment algorithms used, and optimization techniques to reduce errors.
+F104 is a subclass of F27 Densified Cloud Point, as registration often begins with individual densified point clouds—highly detailed datasets representing surfaces—which are then combined into a unified model for further processing or analysis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/191#F105:_Interrogation_Tools</IRI>
+        <Literal xml:lang="en">InterrogationToolsSoftware</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/191#F105:_Interrogation_Tools</IRI>
+        <Literal xml:lang="en">F105: Interrogation Tools (Digital Instruments for Measuring Cloud Points or 3D Models)
+Subclass of:
+D14 Software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/191#F105:_Interrogation_Tools</IRI>
+        <Literal xml:lang="en">A curvature analysis tool (F105) was used to evaluate the surface smoothness of a digital 3D model of an ancient sculpture.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/191#F105:_Interrogation_Tools</IRI>
+        <Literal xml:lang="en">A point cloud comparison tool (F105) was employed to assess differences between two scans of a building facade taken months apart to monitor structural changes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/191#F105:_Interrogation_Tools</IRI>
+        <Literal xml:lang="en">Software-based tools (F105) were applied to a dense point cloud to measure the volume of an archaeological excavation site.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/191#F105:_Interrogation_Tools</IRI>
+        <Literal xml:lang="en">Texture mapping interrogation software (F105) was utilized to assess how accurately textures were applied to a 3D model for virtual exhibition purposes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/191#F105:_Interrogation_Tools</IRI>
+        <Literal xml:lang="en">The F105 Interrogation Tools class refers to software-based tools and algorithms used for measuring, analyzing, and manipulating Cloud Points or 3D Models in a digital environment. This class includes a variety of specialized software solutions, plugins, or standalone programs that allow users to perform precise measurements on 3D digital representations, such as calculating distances, volumes, surface areas, and other geometrical or spatial properties.
+These interrogation tools are integral to post-processing and analysis in photogrammetry and 3D modeling workflows. They enable deeper examination and understanding of 3D data by applying advanced algorithms or providing user-friendly interfaces to visualize and interact with the data. Examples of functions provided by F105 Interrogation Tools include surface analysis, point cloud comparison, texture mapping, and deformation tracking.
+By being a subclass of D14 Software, F105 reflects that the tools in this class are entirely software-based digital devices rather than hardware, and are designed to process and interact with digital models or datasets within a virtual environment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/192#Y15:_is_composed_of_picture</IRI>
+        <Literal xml:lang="en">is_acquired_of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/192#Y15:_is_composed_of_picture</IRI>
+        <Literal xml:lang="en">Y1: is acquired object of
+
+SubProperties of: L1 digitized
+
+Domain: F2 Acquisition
+Range: F1 Survey Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/192#Y15:_is_composed_of_picture</IRI>
+        <Literal xml:lang="en">-</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/192#Y15:_is_composed_of_picture</IRI>
+        <Literal xml:lang="en">This property refers to the specific survey object (F1) that was the subject of the acquisition process (F2). It indicates the object being digitized or acquired during a particular survey or documentation effort.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/193#Y2:__had_pictures_input</IRI>
+        <Literal xml:lang="en">had_pictures_input</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/193#Y2:__had_pictures_input</IRI>
+        <Literal xml:lang="en">Y2: had pictures input
+
+SubProperties of: L10 had input
+
+Domain: F2 Acquisition
+Range: F7 Picture Set</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/193#Y2:__had_pictures_input</IRI>
+        <Literal xml:lang="en">-</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/193#Y2:__had_pictures_input</IRI>
+        <Literal xml:lang="en">This property refers to the set of pictures (F7) that were used as input during an acquisition event (F2). It connects the acquisition process to the photographic data that was collected or processed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/194#Y3:_has_Type_Of_Acquisition</IRI>
+        <Literal xml:lang="en">has_type_of_acquisition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/194#Y3:_has_Type_Of_Acquisition</IRI>
+        <Literal xml:lang="en">Y3: has Type Of Acquisition
+
+SubProperties of: P2 has type
+
+Domain: F12 Acquisition Trajectory
+Range: F17 Acquisition Trajectory Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/194#Y3:_has_Type_Of_Acquisition</IRI>
+        <Literal xml:lang="en">-</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/194#Y3:_has_Type_Of_Acquisition</IRI>
+        <Literal xml:lang="en">This property identifies the type of trajectory used during an acquisition event (F12). It specifies the method or approach taken to move through space and acquire data, such as linear, circular, or other types of trajectories.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/195#Y4_has_dominant_geometry_type</IRI>
+        <Literal xml:lang="en">has_dominant_geometry_type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/195#Y4_has_dominant_geometry_type</IRI>
+        <Literal xml:lang="en">Y4: has dominant geometry type
+
+SubProperties of: P2 has type
+
+Domain: F13 Acquisition Method
+Range: F18 Geometry Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/195#Y4_has_dominant_geometry_type</IRI>
+        <Literal xml:lang="en">-</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/195#Y4_has_dominant_geometry_type</IRI>
+        <Literal xml:lang="en">This property describes the dominant geometry type (F18) captured during an acquisition method (F13). It indicates whether the acquisition primarily involved points, lines, surfaces, or volumes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/196#Y5_has_scale_type</IRI>
+        <Literal xml:lang="en">has_scale_type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/196#Y5_has_scale_type</IRI>
+        <Literal xml:lang="en">Y5: has scale type
+
+SubProperties of: P2 has type
+
+Domain: F13 Acquisition Method
+Range: F19 Scale Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/196#Y5_has_scale_type</IRI>
+        <Literal xml:lang="en">-</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/196#Y5_has_scale_type</IRI>
+        <Literal xml:lang="en">This property refers to the scale type (F19) associated with the acquisition method (F13). It defines whether the acquisition was performed on a small, medium, or large scale, according to the object and purpose of the survey.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/197#Y6_used_trajectory</IRI>
+        <Literal xml:lang="en">used_trajectory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/197#Y6_used_trajectory</IRI>
+        <Literal xml:lang="en">Y6: used trajectory
+
+SubProperties of: P33 used specific technique
+
+Domain: F2 Acquisition
+Range: F12 Acquisition Trajectory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/197#Y6_used_trajectory</IRI>
+        <Literal xml:lang="en">-</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/197#Y6_used_trajectory</IRI>
+        <Literal xml:lang="en">This property describes the specific trajectory (F12) used during the acquisition event (F2). It denotes the path or movement employed to capture data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
