@@ -27,7 +27,7 @@ jobs:
         run: |
            wget -O widoco.jar https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-11.jar
            mkdir public
-           java -jar widoco.jar -ontFile PODS_1_1_7.owl -outFolder public -uniteSections -includeAnnotationProperties -lang en-de  -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
+           java -jar widoco.jar -ontFile PODS_1_1_7.ttl -outFolder public -uniteSections -includeAnnotationProperties -lang en-de  -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
@@ -40,7 +40,7 @@ jobs:
     uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
     with: 
         version: v018
-        rdffilepath: PODS_1_1_7.owl
+        rdffilepath: PODS_1_1_7.ttl
         docpath: docs
         prefixns: https://photogrammetry.altervista.org/collections/show/3/
         prefixnsshort: limes
