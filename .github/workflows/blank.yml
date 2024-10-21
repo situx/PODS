@@ -39,6 +39,7 @@ jobs:
   build: 
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
+    needs: widoco
     with: 
         version: v018
         rdffilepath: PODS_1_1_7.ttl
