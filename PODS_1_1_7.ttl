@@ -900,7 +900,7 @@ This property is a shortcut for the path from E1 CRM Entity through P41i was cla
 Properties:
 -
 Examples:
-“enquiries"""@cidoc-crm.org” (e41) has type e-mail address (e55). (fictitious) .
+“enquiries@cidoc-crm.org” (e41) has type e-mail address (e55). (fictitious)""" .
 
 
 ###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P31_has_modified_(was_modified_by)
