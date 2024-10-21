@@ -32,6 +32,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
           BRANCH: gh-pages
+          FOLDER: public
           clean: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   # This workflow contains a single job called "build"  
@@ -53,4 +54,5 @@ jobs:
         createnonNSPages: true
         createVOWL: true
         preferredlang: en
+        ghpagesfolder: ontdoc
         ghpages: true
