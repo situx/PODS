@@ -43,7 +43,7 @@ jobs:
         rdffilepath: PODS_1_1_7.ttl
         docpath: docs
         prefixns: https://photogrammetry.altervista.org/collections/show/3
-        prefixnsshort: limes
+        prefixnsshort: pods
         indexpages: true
         ckan: false
         metadatatable: true
