@@ -34,8 +34,7 @@ jobs:
           BRANCH: gh-pages
           FOLDER: public
           clean: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   # This workflow contains a single job called "build"  
   build: 
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
