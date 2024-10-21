@@ -15,6 +15,25 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+
+  widoco:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+         ref: main
+         path: main
+      - name: Build HTML for main
+        run: |
+           wget -O widoco.jar https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-11.jar
+           mkdir public
+           java -jar widoco.jar -ontFile main/nfdicore.ttl -outFolder public -uniteSections -includeAnnotationProperties -lang en-de  -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v4
+        with:
+          BRANCH: gh-pages
+          clean: false
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   # This workflow contains a single job called "build"  
   build: 
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
