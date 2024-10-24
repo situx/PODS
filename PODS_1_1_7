@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://photogrammetry.altervista.org/collections/show/3">
+    <Prefix name="" IRI="https://photogrammetry.altervista.org/collections/show/3#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -600,30 +601,6 @@ This document presents the detailed structure of the PODS ontology, outlining ea
         <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P9_consists_of_(forms_part_of)"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y77:_has_printed_physical_digital_twin"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y78:_used_specific_printing_machine"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y79:_consists_of_printing_material"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y80:_is_in_GIS"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y81:_used_GIS_software"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y82:_had_model_prospectuses_for_CAD_as_input"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y83:_used_CAD_software"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y84:_had_prospectus_output"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="https://photogrammetry.altervista.org/admin/items/show/253#Y62_has_modelling_operator"/>
     </Declaration>
     <Declaration>
@@ -853,6 +830,30 @@ This document presents the detailed structure of the PODS ontology, outlining ea
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/277#Y76:_printing_based_on"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/278#Y77:_has_printed_physical_digital_twin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/279#Y78:_used_specific_printing_machine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/280#Y79:_consists_of_printing_material"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/281#Y80:_is_in_GIS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/282#Y81:_used_GIS_software"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/283#Y82:_had_model_prospectuses_for_CAD_as_input"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/284#Y83:_used_CAD_software"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/285#Y84:_had_prospectus_output"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P3_has_note"/>
@@ -2353,38 +2354,6 @@ This document presents the detailed structure of the PODS ontology, outlining ea
         <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P10_falls_within_(contains)"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y77:_has_printed_physical_digital_twin"/>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P108_has_produced_(was_produced_by)"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y78:_used_specific_printing_machine"/>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P16_used_specific_object_(was_used_for)"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y79:_consists_of_printing_material"/>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P45_consists_of_(is_incorporated_in)"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y80:_is_in_GIS"/>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P106_is_composed_of_(forms_part_of)"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y81:_used_GIS_software"/>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L23_used_software_or_firmware_(was_software_or_firmware_used_by)"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y82:_had_model_prospectuses_for_CAD_as_input"/>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L10_had_input_(was_input_of)"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y83:_used_CAD_software"/>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L23_used_software_or_firmware_(was_software_or_firmware_used_by)"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y84:_had_prospectus_output"/>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L11_had_output_(was_output_of)"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="https://photogrammetry.altervista.org/admin/items/show/253#Y62_has_modelling_operator"/>
         <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P14_carried_out_by_(performed)"/>
     </SubObjectPropertyOf>
@@ -2708,6 +2677,38 @@ This document presents the detailed structure of the PODS ontology, outlining ea
         <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/277#Y76:_printing_based_on"/>
         <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P17_was_motivated_by_(motivated)"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/278#Y77:_has_printed_physical_digital_twin"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P108_has_produced_(was_produced_by)"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/279#Y78:_used_specific_printing_machine"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P16_used_specific_object_(was_used_for)"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/280#Y79:_consists_of_printing_material"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P45_consists_of_(is_incorporated_in)"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/281#Y80:_is_in_GIS"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P106_is_composed_of_(forms_part_of)"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/282#Y81:_used_GIS_software"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L23_used_software_or_firmware_(was_software_or_firmware_used_by)"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/283#Y82:_had_model_prospectuses_for_CAD_as_input"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L10_had_input_(was_input_of)"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/284#Y83:_used_CAD_software"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L23_used_software_or_firmware_(was_software_or_firmware_used_by)"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/285#Y84:_had_prospectus_output"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L11_had_output_(was_output_of)"/>
+    </SubObjectPropertyOf>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y12_was_continued_by_Processing_Phase"/>
         <Class IRI="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
@@ -2791,38 +2792,6 @@ This document presents the detailed structure of the PODS ontology, outlining ea
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P9_consists_of_(forms_part_of)"/>
         <Class IRI="http://cidoc-crm.org/cidoc-crm/7.1.3/E4_Period#E4_Period"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y77:_has_printed_physical_digital_twin"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/164#F77_Printing_Digital_Twin"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y78:_used_specific_printing_machine"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/164#F77_Printing_Digital_Twin"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y79:_consists_of_printing_material"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/167#F80_Printed_Digital_Twin"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y80:_is_in_GIS"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/168#F81_3D_Model_for_G.I.S."/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y81:_used_GIS_software"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/169#F82_Reference_GIS_System"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y82:_had_model_prospectuses_for_CAD_as_input"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/172#F85_CAD_Analysis"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y83:_used_CAD_software"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/172#F85_CAD_Analysis"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y84:_had_prospectus_output"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/172#F85_CAD_Analysis"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="https://photogrammetry.altervista.org/admin/items/show/253#Y62_has_modelling_operator"/>
@@ -3144,6 +3113,38 @@ This document presents the detailed structure of the PODS ontology, outlining ea
         <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/277#Y76:_printing_based_on"/>
         <Class IRI="https://photogrammetry.altervista.org/items/show/164#F77_Printing_Digital_Twin"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/278#Y77:_has_printed_physical_digital_twin"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/164#F77_Printing_Digital_Twin"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/279#Y78:_used_specific_printing_machine"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/164#F77_Printing_Digital_Twin"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/280#Y79:_consists_of_printing_material"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/167#F80_Printed_Digital_Twin"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/281#Y80:_is_in_GIS"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/168#F81_3D_Model_for_G.I.S."/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/282#Y81:_used_GIS_software"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/169#F82_Reference_GIS_System"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/283#Y82:_had_model_prospectuses_for_CAD_as_input"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/172#F85_CAD_Analysis"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/284#Y83:_used_CAD_software"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/172#F85_CAD_Analysis"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/285#Y84:_had_prospectus_output"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/172#F85_CAD_Analysis"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y12_was_continued_by_Processing_Phase"/>
         <Class IRI="https://photogrammetry.altervista.org/items/show/89#F3_Processing"/>
@@ -3227,38 +3228,6 @@ This document presents the detailed structure of the PODS ontology, outlining ea
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P9_consists_of_(forms_part_of)"/>
         <Class IRI="http://cidoc-crm.org/cidoc-crm/7.1.3/E4_Period#E4_Period"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y77:_has_printed_physical_digital_twin"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/167#F80_Printed_Digital_Twin"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y78:_used_specific_printing_machine"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/166#F79_Printing_Device"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y79:_consists_of_printing_material"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/165#F78_Material_for_3D_Printing"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y80:_is_in_GIS"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/169#F82_Reference_GIS_System"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y81:_used_GIS_software"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/170#F83_GIS_Software"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y82:_had_model_prospectuses_for_CAD_as_input"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/174#F87_3D_Model_Prospectus"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y83:_used_CAD_software"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/173#F86_Software_CAD"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y84:_had_prospectus_output"/>
-        <Class IRI="https://photogrammetry.altervista.org/items/show/171#F84_3D_Model_for_Prospectus"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://photogrammetry.altervista.org/admin/items/show/253#Y62_has_modelling_operator"/>
@@ -3615,6 +3584,38 @@ This document presents the detailed structure of the PODS ontology, outlining ea
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/277#Y76:_printing_based_on"/>
         <Class IRI="https://photogrammetry.altervista.org/items/show/163#F76_3D_Model_for_3D_Print"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/278#Y77:_has_printed_physical_digital_twin"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/167#F80_Printed_Digital_Twin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/279#Y78:_used_specific_printing_machine"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/166#F79_Printing_Device"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/280#Y79:_consists_of_printing_material"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/165#F78_Material_for_3D_Printing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/281#Y80:_is_in_GIS"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/169#F82_Reference_GIS_System"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/282#Y81:_used_GIS_software"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/170#F83_GIS_Software"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/283#Y82:_had_model_prospectuses_for_CAD_as_input"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/174#F87_3D_Model_Prospectus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/284#Y83:_used_CAD_software"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/173#F86_Software_CAD"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://photogrammetry.altervista.org/items/show/285#Y84:_had_prospectus_output"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/171#F84_3D_Model_for_Prospectus"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y21:_has_coordinates_of_acquisition"/>
@@ -6450,115 +6451,6 @@ Properties:
 -
 Examples:
 Cretan Bronze Age (E4) consists of Middle Minoan (E4). (Hood, 1971)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y77:_has_printed_physical_digital_twin</IRI>
-        <Literal>Y77: has printed physical digital twin
-Subproperty of: P108 has produced
-Domain: Printing Digital Twin
-Range: Printed Digital Twin
-
-Scope Note:
-This property links the printing process of a digital twin (Printing Digital Twin) to the final physical output, a Printed Digital Twin.
-
-Example:
-The Printing Digital Twin process produced a Printed Digital Twin, representing the physical counterpart of the digital model.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y78:_used_specific_printing_machine</IRI>
-        <Literal>Y78: used specific printing machine
-Subproperty of: P16 used specific object
-Domain: Printing Digital Twin
-Range: Printing Device
-
-Scope Note:
-This property defines the specific printing machine (Printing Device) used in the process of printing a digital twin (Printing Digital Twin).
-
-Example:
-The Printing Digital Twin process used a Printing Device like an SLS 3D printer.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y79:_consists_of_printing_material</IRI>
-        <Literal>Y79: consists of printing material
-Subproperty of: P45 consists of
-Domain: Printed Digital Twin
-Range: Material for 3D Raw
-
-Scope Note:
-This property indicates the materials (Material for 3D Raw) used in the creation of a Printed Digital Twin.
-
-Example:
-The Printed Digital Twin consists of Material for 3D Raw, such as PLA or resin.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y80:_is_in_GIS</IRI>
-        <Literal>Y80: is in GIS
-Subproperty of: P106i forms part of
-Domain: 3D Model for GIS
-Range: Reference GIS System
-
-Scope Note:
-This property indicates that a 3D model for GIS (3D Model for GIS) is integrated within a specific GIS system (Reference GIS System).
-
-Example:
-The 3D Model for GIS is included in a Reference GIS System like ArcGIS for geospatial analysis.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y81:_used_GIS_software</IRI>
-        <Literal>Y81: used GIS software
-Subproperty of: L23 used software or firmware
-Domain: Reference GIS System
-Range: GIS Software
-
-Scope Note:
-This property specifies the GIS software (GIS Software) that was used to manage or process the 3D model within the GIS system.
-
-Example:
-The Reference GIS System used GIS Software such as QGIS to integrate the 3D model with geographic data.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y82:_had_model_prospectuses_for_CAD_as_input</IRI>
-        <Literal>Y82: had model prospectuses for CAD as input
-Subproperty of: L10 had input
-Domain: CAD Analysis
-Range: 3D Model for Prospectuses
-
-Scope Note:
-This property indicates that the CAD analysis phase (CAD Analysis) used a 3D model designed for prospectuses (3D Model for Prospectuses) as an input.
-
-Example:</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y83:_used_CAD_software</IRI>
-        <Literal>Y83: used CAD software
-Subproperty of: L23 used software
-Domain: CAD Analysis
-Range: Software CAD
-
-Scope Note:
-This property specifies that the CAD analysis phase (CAD Analysis) used a specific CAD software (Software CAD) for its operations.
-
-Example:</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y84:_had_prospectus_output</IRI>
-        <Literal>Y84: had prospectus output
-Subproperty of: L11 had output
-Domain: CAD Analysis
-Range: 3D Model Prospectus
-
-Scope Note:
-This property indicates that the CAD analysis (CAD Analysis) produced a 3D model prospectus (3D Model Prospectus) as its output.
-
-Example:</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11505,6 +11397,215 @@ F76 3D Model for 3D Print</Literal>
         <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
         <IRI>https://photogrammetry.altervista.org/items/show/277#Y76:_printing_based_on</IRI>
         <Literal xml:lang="en">This property shows that the printing process of a digital twin (Printing Digital Twin) is motivated by or based on a specific 3D model intended for 3D printing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/278#Y77:_has_printed_physical_digital_twin</IRI>
+        <Literal xml:lang="en">has_printed_physical_digital_twin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/278#Y77:_has_printed_physical_digital_twin</IRI>
+        <Literal xml:lang="en">Y77: has printed physical digital twin
+Subproperty of: P108 has produced
+Domain
+F77 Printing Digital Twin
+Range
+F80 Printed Digital Twin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/278#Y77:_has_printed_physical_digital_twin</IRI>
+        <Literal xml:lang="en">The Printing Digital Twin process produced a Printed Digital Twin, representing the physical counterpart of the digital model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/278#Y77:_has_printed_physical_digital_twin</IRI>
+        <Literal xml:lang="en">This property links the printing process of a digital twin (Printing Digital Twin) to the final physical output, a Printed Digital Twin.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/279#Y78:_used_specific_printing_machine</IRI>
+        <Literal xml:lang="en">used_specific_printing_machine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/279#Y78:_used_specific_printing_machine</IRI>
+        <Literal xml:lang="en">Y78: used specific printing machine
+Subproperty of: P16 used specific object
+
+Domain
+F77 Printing Digital Twin
+
+Range
+F79 Printing Device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/279#Y78:_used_specific_printing_machine</IRI>
+        <Literal xml:lang="en">The Printing Digital Twin process used a Printing Device like an SLS 3D printer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/279#Y78:_used_specific_printing_machine</IRI>
+        <Literal xml:lang="en">This property defines the specific printing machine (Printing Device) used in the process of printing a digital twin (Printing Digital Twin).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/280#Y79:_consists_of_printing_material</IRI>
+        <Literal xml:lang="en">consists_of_printing_material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/280#Y79:_consists_of_printing_material</IRI>
+        <Literal xml:lang="en">Y79: consists of printing material
+
+Subproperty of: P45 consists of
+
+Domain
+F80 Printed Digital Twin
+
+Range
+F78 Material for 3D Printed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/280#Y79:_consists_of_printing_material</IRI>
+        <Literal xml:lang="en">The Printed Digital Twin consists of Material for 3D Raw, such as PLA or resin.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/280#Y79:_consists_of_printing_material</IRI>
+        <Literal xml:lang="en">This property indicates the materials (Material for 3D Raw) used in the creation of a Printed Digital Twin.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/281#Y80:_is_in_GIS</IRI>
+        <Literal xml:lang="en">is_in_GIS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/281#Y80:_is_in_GIS</IRI>
+        <Literal xml:lang="en">Y80: is in GIS
+Subproperty of: P106i forms part of
+
+Domain
+F81 3D Model for GIS
+
+Range
+F82 Reference GIS System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/281#Y80:_is_in_GIS</IRI>
+        <Literal xml:lang="en">The 3D Model for GIS is included in a Reference GIS System like ArcGIS for geospatial analysis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/281#Y80:_is_in_GIS</IRI>
+        <Literal xml:lang="en">This property indicates that a 3D model for GIS (3D Model for GIS) is integrated within a specific GIS system (Reference GIS System).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/282#Y81:_used_GIS_software</IRI>
+        <Literal xml:lang="en">used_GIS_software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/282#Y81:_used_GIS_software</IRI>
+        <Literal xml:lang="en">Y81: used GIS software
+Subproperty of: L23 used software or firmware
+
+Domain
+F82 Reference GIS System
+
+Range
+F83 GIS Software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/282#Y81:_used_GIS_software</IRI>
+        <Literal xml:lang="en">The Reference GIS System used GIS Software such as QGIS to integrate the 3D model with geographic data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/282#Y81:_used_GIS_software</IRI>
+        <Literal xml:lang="en">This property specifies the GIS software (GIS Software) that was used to manage or process the 3D model within the GIS system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/283#Y82:_had_model_prospectuses_for_CAD_as_input</IRI>
+        <Literal xml:lang="en">had_model_prospectus_as_input</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/283#Y82:_had_model_prospectuses_for_CAD_as_input</IRI>
+        <Literal xml:lang="en">Y82: had model prospectuses for CAD as input
+Subproperty of: L10 had input
+Domain
+F85 CAD Analysis
+Range
+F87 3D Model for Prospectuses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/283#Y82:_had_model_prospectuses_for_CAD_as_input</IRI>
+        <Literal xml:lang="en">-</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/283#Y82:_had_model_prospectuses_for_CAD_as_input</IRI>
+        <Literal xml:lang="en">This property indicates that the CAD analysis phase (CAD Analysis) used a 3D model designed for prospectuses (3D Model for Prospectuses) as an input.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/284#Y83:_used_CAD_software</IRI>
+        <Literal xml:lang="en">used_CAD_software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/284#Y83:_used_CAD_software</IRI>
+        <Literal xml:lang="en">Y83: used CAD software
+Subproperty of: L23 used software
+Domain
+F85 CAD Analysis
+Range
+F86 Software CAD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/284#Y83:_used_CAD_software</IRI>
+        <Literal xml:lang="en">-</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/284#Y83:_used_CAD_software</IRI>
+        <Literal xml:lang="en">This property specifies that the CAD analysis phase (CAD Analysis) used a specific CAD software (Software CAD) for its operations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/285#Y84:_had_prospectus_output</IRI>
+        <Literal xml:lang="en">had_prospectus_output</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/285#Y84:_had_prospectus_output</IRI>
+        <Literal xml:lang="en">Y84: had prospectus output
+Subproperty of: L11 had output
+Domain
+F85 CAD Analysis
+Range
+F84 3D Model Prospectus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/285#Y84:_had_prospectus_output</IRI>
+        <Literal xml:lang="en">-</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/285#Y84:_had_prospectus_output</IRI>
+        <Literal xml:lang="en">This property indicates that the CAD analysis (CAD Analysis) produced a 3D model prospectus (3D Model Prospectus) as its output.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
