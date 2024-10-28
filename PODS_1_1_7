@@ -454,6 +454,15 @@ This document presents the detailed structure of the PODS ontology, outlining ea
         <Class IRI="https://photogrammetry.altervista.org/items/show/191#F105:_Interrogation_Tools"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/286#F106_Acquisition_Location_Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/287#F108_Calibration_of_the_Instrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/288#F109_Marker_and_Calibration_Tools"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="https://photogrammetry.altervista.org/items/show/89#F3_Processing"/>
     </Declaration>
     <Declaration>
@@ -1792,6 +1801,18 @@ This document presents the detailed structure of the PODS ontology, outlining ea
     <SubClassOf>
         <Class IRI="https://photogrammetry.altervista.org/items/show/191#F105:_Interrogation_Tools"/>
         <Class IRI="http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/286#F106_Acquisition_Location_Type"/>
+        <Class IRI="http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/287#F108_Calibration_of_the_Instrument"/>
+        <Class IRI="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/288#F109_Marker_and_Calibration_Tools"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="https://photogrammetry.altervista.org/items/show/89#F3_Processing"/>
@@ -11606,6 +11627,87 @@ F84 3D Model Prospectus</Literal>
         <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
         <IRI>https://photogrammetry.altervista.org/items/show/285#Y84:_had_prospectus_output</IRI>
         <Literal xml:lang="en">This property indicates that the CAD analysis (CAD Analysis) produced a 3D model prospectus (3D Model Prospectus) as its output.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/286#F106_Acquisition_Location_Type</IRI>
+        <Literal xml:lang="en">acquisition_location_type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/286#F106_Acquisition_Location_Type</IRI>
+        <Literal xml:lang="en">F106 Acquisition Location Type
+
+Subclass of: E55 Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/286#F106_Acquisition_Location_Type</IRI>
+        <Literal xml:lang="en">An indoor environment with low light, such as a museum display room.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/286#F106_Acquisition_Location_Type</IRI>
+        <Literal xml:lang="en">An outdoor archaeological site without additional lighting.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/286#F106_Acquisition_Location_Type</IRI>
+        <Literal xml:lang="en">The Acquisition Location Type class categorizes the setting in which data acquisition took place. It specifies whether the location was outdoors, indoors with natural lighting, indoors with controlled lighting, in a dark space (such as a cave), outdoors with no natural lighting, outdoors with supplementary artificial lighting, or entirely illuminated by artificial sources.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/287#F108_Calibration_of_the_Instrument</IRI>
+        <Literal xml:lang="en">Acquisition_InstrumentCalibration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/287#F108_Calibration_of_the_Instrument</IRI>
+        <Literal xml:lang="en">F108 Calibration of the Instrument
+
+Subclass of: F2 Acquisition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/287#F108_Calibration_of_the_Instrument</IRI>
+        <Literal xml:lang="en">Calibration of a fixed photogrammetry camera system for high-resolution artifact capture.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/287#F108_Calibration_of_the_Instrument</IRI>
+        <Literal xml:lang="en">Pre-acquisition calibration of a laser scanner.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/287#F108_Calibration_of_the_Instrument</IRI>
+        <Literal xml:lang="en">The Calibration of the Instrument class records the calibration process of the acquisition device, such as a camera, laser scanner, fixed-camera photogrammetry system (e.g., ATOS III), or LiDAR. This includes any calibration procedures conducted before acquisition or throughout the data capture process to ensure accuracy and reliability in measurement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/288#F109_Marker_and_Calibration_Tools</IRI>
+        <Literal xml:lang="en">AcquisitionDeviceMarker&amp;Calibration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/288#F109_Marker_and_Calibration_Tools</IRI>
+        <Literal xml:lang="en">F109 Marker and Calibration Tools
+
+Subclass of: F9 Acquisition Device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/288#F109_Marker_and_Calibration_Tools</IRI>
+        <Literal xml:lang="en">Markers used in photogrammetry software for real-time calibration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/288#F109_Marker_and_Calibration_Tools</IRI>
+        <Literal xml:lang="en">Prisms applied in total station systems for external coordinate accuracy.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>https://photogrammetry.altervista.org/items/show/288#F109_Marker_and_Calibration_Tools</IRI>
+        <Literal xml:lang="en">The Marker and Calibration Tools class encompasses all tools used for instrument calibration, including markers placed prior to acquisition (e.g., those required by fixed-camera systems like ATOS III) and those used during data capture (such as markers for software like Agisoft). This class also includes total station prisms and any external coordinate assignment tools.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
