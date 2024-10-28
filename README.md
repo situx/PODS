@@ -1644,7 +1644,7 @@ Label: ProcessedDensifiedPointCloudRegistration
 —--------------------------------------------------------------------------- 
  
 F105: Interrogation Tools (Digital Instruments for Measuring Cloud Points or 3D Models)
-URI: (to be defined)
+URI: https://photogrammetry.altervista.org/items/show/191 
 Subclass of:
 D14 Software
 
@@ -2904,103 +2904,115 @@ Label: printing_based_on
 —------------------------------------------------------------------------
 
 Y77: has printed physical digital twin
+URI: https://photogrammetry.altervista.org/items/show/278 
 Subproperty of: P108 has produced
-Domain: Printing Digital Twin
-Range: Printed Digital Twin
+Domain: F77 Printing Digital Twin
+Range: F80 Printed Digital Twin
 
 Scope Note:
 This property links the printing process of a digital twin (Printing Digital Twin) to the final physical output, a Printed Digital Twin.
 
 Example:
 The Printing Digital Twin process produced a Printed Digital Twin, representing the physical counterpart of the digital model.
+Label: has_printed_physical_digital_twin
 —------------------------------------------------------------------------
 
 Y78: used specific printing machine
+URI: https://photogrammetry.altervista.org/items/show/279 
 Subproperty of: P16 used specific object
-Domain: Printing Digital Twin
-Range: Printing Device
+Domain: F77 Printing Digital Twin
+Range: F79 Printing Device
 
 Scope Note:
 This property defines the specific printing machine (Printing Device) used in the process of printing a digital twin (Printing Digital Twin).
 
 Example:
 The Printing Digital Twin process used a Printing Device like an SLS 3D printer.
+Label: used_specific_printing_machine
 —------------------------------------------------------------------------
 
 Y79: consists of printing material
+URI: https://photogrammetry.altervista.org/items/show/280 
 Subproperty of: P45 consists of
-Domain: Printed Digital Twin
-Range: Material for 3D Raw
+Domain: F80 Printed Digital Twin
+Range: F78 Material for 3D Printed
 
 Scope Note:
-This property indicates the materials (Material for 3D Raw) used in the creation of a Printed Digital Twin.
+This property indicates the materials (Material for 3D Printed) used in the creation of a Printed Digital Twin.
 
 Example:
 The Printed Digital Twin consists of Material for 3D Raw, such as PLA or resin.
+Label: consists_of_printing_material
 —------------------------------------------------------------------------
 
 Y80: is in GIS
+URI: https://photogrammetry.altervista.org/items/show/281 
 Subproperty of: P106i forms part of
-Domain: 3D Model for GIS
-Range: Reference GIS System
+Domain: F81 3D Model for GIS
+Range: F82 Reference GIS System
 
 Scope Note:
 This property indicates that a 3D model for GIS (3D Model for GIS) is integrated within a specific GIS system (Reference GIS System).
 
 Example:
 The 3D Model for GIS is included in a Reference GIS System like ArcGIS for geospatial analysis.
+Label: is_in_GIS
 —------------------------------------------------------------------------
 
 Y81: used GIS software
+URI: https://photogrammetry.altervista.org/items/show/282 
 Subproperty of: L23 used software or firmware
-Domain: Reference GIS System
-Range: GIS Software
+Domain: F82 Reference GIS System
+Range: F83 GIS Software
 
 Scope Note:
 This property specifies the GIS software (GIS Software) that was used to manage or process the 3D model within the GIS system.
 
 Example:
 The Reference GIS System used GIS Software such as QGIS to integrate the 3D model with geographic data.
-
+Label: used_GIS_software
 —------------------------------------------------------------------------
 
 Y82: had model prospectuses for CAD as input
+URI: https://photogrammetry.altervista.org/items/show/283 
 Subproperty of: L10 had input
-Domain: CAD Analysis
-Range: 3D Model for Prospectuses
+Domain: F85 CAD Analysis
+Range: F87 3D Model for Prospectuses
 
 Scope Note:
 This property indicates that the CAD analysis phase (CAD Analysis) used a 3D model designed for prospectuses (3D Model for Prospectuses) as an input.
 
 Example:
-
-
+ 
+Label: had_model_prospectus_as_input
 —------------------------------------------------------------------------
 
 Y83: used CAD software
+URI: https://photogrammetry.altervista.org/items/show/284 
 Subproperty of: L23 used software
-Domain: CAD Analysis
-Range: Software CAD
+Domain: F85 CAD Analysis
+Range: F86 Software CAD
 
 Scope Note:
 This property specifies that the CAD analysis phase (CAD Analysis) used a specific CAD software (Software CAD) for its operations.
 
 Example:
-
-
+ 
+Label: used_CAD_software
 —------------------------------------------------------------------------
 
 Y84: had prospectus output
+URI: https://photogrammetry.altervista.org/items/show/285 
 Subproperty of: L11 had output
-Domain: CAD Analysis
-Range: 3D Model Prospectus
+Domain: F85 CAD Analysis
+Range: F84 3D Model Prospectus
 
 Scope Note:
 This property indicates that the CAD analysis (CAD Analysis) produced a 3D model prospectus (3D Model Prospectus) as its output.
 
 Example:
-
-
+  
+Label: had_prospectus_output
 —------------------------------------------------------------------------
 
 Y85: had archaeometric input
@@ -3353,5 +3365,54 @@ https://farotechnologies.mcoutput.com/focus-scanner/it-it/Default.htm
 
 
 
+
+PODS 1_1_79
+
+
+F106 Acquisition Location Type
+URI: https://photogrammetry.altervista.org/items/show/286 
+Subclass of: E55 Type
+
+Scope Note:
+The Acquisition Location Type class categorizes the setting in which data acquisition took place. It specifies whether the location was outdoors, indoors with natural lighting, indoors with controlled lighting, in a dark space (such as a cave), outdoors with no natural lighting, outdoors with supplementary artificial lighting, or entirely illuminated by artificial sources.
+
+Examples:
+
+An indoor environment with low light, such as a museum display room.
+An outdoor archaeological site without additional lighting.
+
+Label: acquisition_location_type
+
+—--------------------------------------------------------------------------------------
+F108 Calibration of the Instrument
+URI: https://photogrammetry.altervista.org/items/show/287 
+Subclass of: F2 Acquisition
+
+Scope Note:
+The Calibration of the Instrument class records the calibration process of the acquisition device, such as a camera, laser scanner, fixed-camera photogrammetry system (e.g., ATOS III), or LiDAR. This includes any calibration procedures conducted before acquisition or throughout the data capture process to ensure accuracy and reliability in measurement.
+
+Examples:
+
+Pre-acquisition calibration of a laser scanner.
+Calibration of a fixed photogrammetry camera system for high-resolution artifact capture.
+
+Label: Acquisition_InstrumentCalibration
+—--------------------------------------------------------------------------
+
+F109 Marker and Calibration Tools
+URI: https://photogrammetry.altervista.org/items/show/288 
+Subclass of: F9 Acquisition Device
+
+Scope Note:
+The Marker and Calibration Tools class encompasses all tools used for instrument calibration, including markers placed prior to acquisition (e.g., those required by fixed-camera systems like ATOS III) and those used during data capture (such as markers for software like Agisoft). This class also includes total station prisms and any external coordinate assignment tools.
+
+Examples:
+
+Markers used in photogrammetry software for real-time calibration.
+Prisms applied in total station systems for external coordinate accuracy.
+
+Label: AcquisitionDeviceMarker&Calibration
+
+—----------------------------------------------------------------------------------------
 
 
