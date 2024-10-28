@@ -14,27 +14,64 @@
     <Prefix name="pods" IRI="https://photogrammetry.altervista.org/collections/show/3"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Import>http://objects.mainzed.org/metadata/ont#</Import>
     <Import>http://www.opengis.net/ont/geosparql</Import>
     <Import>http://www.w3.org/2004/02/skos/core</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal xml:lang="en">Timo Homburg, Anja Cramer, Laura Raddatz</Literal>
+    </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal xml:lang="en">Vittorio Lauro</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal xml:lang="en">Introduction to the PODS Ontology
+        <Literal xml:lang="en">Introduction to the PODS and Mainzed 3D Metadata Ontologies
 
-The Protocol of Ontological Digital Survey (PODS) is an ontology designed to standardize and formalize the digital surveying process, particularly for the documentation and preservation of cultural heritage. Developed as a refinement and expansion of previous protocols such as BeAPG and FOPPA, PODS focuses on the precise metadata representation of each step in the digital surveying workflow, ensuring a structured and semantically coherent approach to 3D data acquisition, processing, and management.
+The Protocol of Ontological Digital Survey (PODS) ontology was developed to standardize and formalize the digital survey process for cultural heritage, with a focus on accurate metadata representation at each stage of 3D data acquisition, processing, and management. Building on previous protocols like BeAPG and FOPPA, PODS integrates standards such as SKOS, QUDT, and CIDOC-CRMdig, promoting interoperability with international data-sharing platforms like Wikimedia. PODS organizes classes and properties to document each step, enabling structured and consistent cataloging of digital heritage assets.
 
-The ontology integrates established standards such as SKOS, QUDT, and CIDOC-CRM, with specific extensions like CIDOC-CRMdig, to enhance interoperability and compatibility with international data-sharing platforms, including Wikimedia’s database structures. PODS provides a robust framework for representing the phases, sub-phases, actions, and tools involved in digital surveying, facilitating the creation of accurate, structured data about three-dimensional cultural heritage assets.
+Recently, the PODS ontology has been merged with the Mainzed 3D Metadata Ontology, an ontology curated by Timo Homburg, Anja Cramer, and Laura Raddatz, designed to classify 3D survey operations. This integration aimed to align nearly all classes between the two ontologies, creating a comprehensive framework that enhances the precision and accessibility of cultural heritage data across diverse contexts.
 
-The ontology is organized into classes and properties that define and describe the key components of the digital surveying process. These classes capture essential information about the objects, processes, and tools used in 3D photogrammetry, enabling the precise cataloging of digital models, point clouds, and related metadata. PODS aims to create a scalable, adaptable system that can be applied in diverse contexts, from archaeological excavation sites to museum digitalization projects.
+Despite the extensive alignment, certain classes from the Mainzed 3D Metadata Ontology were excluded for specific reasons:
 
-This document presents the detailed structure of the PODS ontology, outlining each class and its associated properties, along with their relationships to established standards. The goal is to provide a clear and systematic framework that ensures consistency, accuracy, and completeness in digital heritage documentation.</Literal>
+indoor/outdoor: Excluded for vagueness; however, the superclass Environment was retained to account for the role of lighting in data acquisition.
+
+algorithm: Its role as an agent is debated, and cataloging every possible algorithm was deemed impractical without an exhaustive thesaurus.
+
+feature detection algorithm subclasses: Excluded due to their potential obsolescence as algorithms evolve over time.
+
+measurement algorithm subclasses: Similarly excluded because they may become outdated with advancements in measurement methods.
+
+acquisition technology subclasses: Excluded for their specificity, as evolving technologies could render these definitions obsolete.
+
+export function subclasses: Excluded as they specify highly software-specific actions that may change over time.
+
+remove function subclasses: Excluded for their software-specific nature, with actions that may vary across applications.
+
+Split Function and Transformation Function: Omitted due to specificity to particular software, leading to potential incompatibility over time.
+
+Measurement: This class and its subclasses (e.g., Agisoft and chunk measures) were excluded as they are either overly generic or specific to certain software, complicating interoperability.
+
+measurement check, measurement project, measurement series, and measurement setup: Excluded due to ambiguities around the data type (e.g., point cloud or mesh), often linked to specific software commands.
+
+Technology: Excluded for being overly generic, although all its subclasses were incorporated.
+
+Raster Data: Excluded as a class, but its subclasses were integrated for granularity.
+
+Geometry subclasses: While exhaustive, they were excluded to avoid redundancy, with a reference to ISO 19107 in the Geometry class to maintain specificity.
+
+spatial object: Excluded for its generality, though its subclasses were retained.
+
+tool: Excluded for being too broad, yet all subclasses were integrated.
+
+Calibration object to calibrate a capturing device subclasses: Excluded due to their specificity to certain devices.
+
+Through the alignment and exclusion of specific classes, this merged ontology establishes a robust, adaptable structure for digital cultural heritage documentation, enabling compatibility and integration across platforms while ensuring data precision and longevity.</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://cidoc-crm.org/cidoc-crm/7.1.3/E11_Modification#E11_Modification"/>
@@ -124,6 +161,18 @@ This document presents the detailed structure of the PODS ontology, outlining ea
         <Class IRI="http://cidoc-crm.org/cidoc-crm/7.1.3/E94_Space_Primitive#E94_Space_Primitive"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#Calibration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#Enviroment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/type/ont#CalibrationObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/type/ont#Tool"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity"/>
     </Declaration>
     <Declaration>
@@ -173,6 +222,9 @@ This document presents the detailed structure of the PODS ontology, outlining ea
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F54_Point_Cloud_Vertex_Quality#F54_Point_Cloud_Vertex_Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object"/>
@@ -1218,6 +1270,227 @@ This document presents the detailed structure of the PODS ontology, outlining ea
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
     </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/type/ont#2DRaster"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/type/ont#3DRaster"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/type/ont#4DRaster"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#MeasurementActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/type/ont#ShapeRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/type/ont#PointSet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/type/ont#GeometricalRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#VertexMeasures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#AcquisitionTechnology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/function/ont#MeasurementAlgorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/function/ont#ModificationFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#MeshProcessingActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#FusionAlgorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/function/ont#FeatureDetectionAlgorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/type/ont#PrintableMesh"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#CapturingDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/function/ont#RemoveFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/type/ont#Mesh"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/function/ont#ExportFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.opengis.net/ont/geosparql#Coverage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/agent/ont#Archeologist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/function/ont#ProcessingFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#PointCloud"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/agent/ont#Engineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#CalibrationAlgorithm"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://cidoc-crm.org/cidoc-crm/7.1.3/E39_Actor#E39_Actor"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://cidoc-crm.org/cidoc-crm/7.1.3/E7_Activity#E7_Activity"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/agent/ont#Archeologist"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/123#F37_Survey_Operator"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/agent/ont#Archeologist"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/124#F38_Processing_Operator"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/agent/ont#Engineer"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/123#F37_Survey_Operator"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/agent/ont#Engineer"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/124#F38_Processing_Operator"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/agent/ont#Engineer"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/125#F39_Modelling_Operator"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/function/ont#ExportFunction"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/91#F5_Exporting"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/function/ont#FeatureDetectionAlgorithm"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/107#F21_Matching_Algorithm_Type"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/function/ont#MeasurementAlgorithm"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/191#F105:_Interrogation_Tools"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/function/ont#ModificationFunction"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/90#F4_Modelling"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/function/ont#ProcessingFunction"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/89#F3_Processing"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/function/ont#RemoveFunction"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/154#F67_Modelling_Elimination"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#AcquisitionTechnology"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#Calibration"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/287#F108_Calibration_of_the_Instrument"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#CalibrationAlgorithm"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/189#F103:_Calibration_(Camera_Calibration)"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#CapturingDevice"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#Enviroment"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/286#F106_Acquisition_Location_Type"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#FusionAlgorithm"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/190#F104:_Registration_(Fusion_of_Multiple_Point_Clouds_or_3D_Models)"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#MeasurementActivity"/>
+        <Class IRI="http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S21_Measurement#S21_Measurement"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#MeshProcessingActivity"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/142#F56_Mesh_Reconstruction"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#PointCloud"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/112#F26_Point_Cloud"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#VertexMeasures"/>
+        <Class IRI="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F54_Point_Cloud_Vertex_Quality#F54_Point_Cloud_Vertex_Quality"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/type/ont#CalibrationObject"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/288#F109_Marker_and_Calibration_Tools"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/type/ont#GeometricalRepresentation"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/104#F18_Dominant_Geometry_Type"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/type/ont#Mesh"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/114#F28_3D_Mesh"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/type/ont#PointSet"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/113#F27_Densified_Point_Cloud"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/type/ont#PrintableMesh"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/163#F76_3D_Model_for_3D_Print"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/type/ont#ShapeRepresentation"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/type/ont#2DRaster"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/174#F87_3D_Model_Prospectus"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/type/ont#3DRaster"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/171#F84_3D_Model_for_Prospectus"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://objects.mainzed.org/type/ont#4DRaster"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/159#F72_3D_Model_Video_Rendering"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S4_Observation#S4_Observation"/>
+        <Class IRI="http://www.opengis.net/ont/geosparql#Feature"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.opengis.net/ont/geosparql#Coverage"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/158#F71_Final_Use_of_Digital_Twin"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.opengis.net/ont/geosparql#Geometry"/>
+        <Class IRI="https://photogrammetry.altervista.org/items/show/104#F18_Dominant_Geometry_Type"/>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="http://cidoc-crm.org/cidoc-crm/7.1.3/E11_Modification#E11_Modification"/>
         <Class IRI="http://cidoc-crm.org/cidoc-crm/7.1.3/E7_Activity#E7_Activity"/>
@@ -1333,6 +1606,18 @@ This document presents the detailed structure of the PODS ontology, outlining ea
     <SubClassOf>
         <Class IRI="http://cidoc-crm.org/cidoc-crm/7.1.3/E94_Space_Primitive#E94_Space_Primitive"/>
         <Class IRI="http://cidoc-crm.org/cidoc-crm/7.1.3/E59_Primitive_Value#E59_Primitive_Value"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://objects.mainzed.org/metadata/ont#Calibration"/>
+        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://objects.mainzed.org/type/ont#CalibrationObject"/>
+        <Class IRI="http://objects.mainzed.org/type/ont#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://objects.mainzed.org/type/ont#Tool"/>
+        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D11_Digital_Measurement_Event#D11_Digital_Measurement_Event"/>
@@ -4457,6 +4742,11 @@ Examples:
 POLYGON ((30 10, 40 40, 20 40, 10 20, 30 10)) [Well-Known Text (WKT)]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://objects.mainzed.org/metadata/ont#Environment</IRI>
+        <Literal xml:lang="en">MAINZED_3D_METADATA_ONTOLOGY: Enviroment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity</IRI>
         <Literal>URI:	http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity
@@ -6540,6 +6830,21 @@ The Densification class refers to the process of enriching the initial sparse po
         <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
         <IRI>http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F54_Point_Cloud_Vertex_Quality#F54_Point_Cloud_Vertex_Quality</IRI>
         <Literal xml:lang="en">The Point Cloud Vertex Quality class refers to the assignment of quality attributes to individual vertices (points) in a point cloud (F26 Point Cloud). This class records metrics such as positional accuracy, intensity, color information, or other quality-related characteristics that indicate the reliability and precision of the individual vertices in the point cloud dataset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/ns/prov#Activity</IRI>
+        <Literal xml:lang="en">MAINZED_3D_METADATA_ONTOLOGY: Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/ns/prov#Agent</IRI>
+        <Literal xml:lang="en">MAINZED_3D_METADATA_ONTOLOGY: Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/ns/prov#Entity</IRI>
+        <Literal xml:lang="en">MAINZED_3D_METADATA_ONTOLOGY: Entity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11664,7 +11969,7 @@ Subclass of: E55 Type</Literal>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>https://photogrammetry.altervista.org/items/show/287#F108_Calibration_of_the_Instrument</IRI>
         <Literal xml:lang="en">F108 Calibration of the Instrument
-
+ 
 Subclass of: F2 Acquisition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
